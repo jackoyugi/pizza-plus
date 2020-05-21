@@ -10,35 +10,49 @@
             <img src="img/pizza.jpeg">
             <h1>PiZZa Plus</h1>
             <div class="row">
-                <div class="col-md-5">
-                    <form>
+                <div class="col-md-4">
+                    <form id="myPizza">
                         <div class="form-group">
                                 
                                 <input type="text" class="form-control" value=" Enter your name" id="name">
-                                <button type="submit" class="btn btn-success">Order Pizza</button>
+                                
                         </div>
                         
-                            <div class="form-group">
+                            <div class="form-group unshow" id="size">
                                 <label><input type="checkbox" name="size" value="small">Small</label>
                                 <label><input type="checkbox" name="size" value="medium">Medium</label>
                                 <label><input type="checkbox" name="size" value="large">Large</label>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group unshow" id="crust">
                                 <label><input type="checkbox" name="crust" value="cruspy">Cruspy</label>
                                 <label><input type="checkbox" name="crust" value="started">Started</label>
                                 <label><input type="checkbox" name="crust" value="gluten">Gluten free</label>
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group unshow">
                                 <label><input type="checkbox" name="toppings" value="corn">Corn</label>
                                 <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
                                 <label><input type="checkbox" name="toppings" value="mushrooms">Mushroom</label>
                                 <label><input type="checkbox" name="toppings" value="ham">Ham</label>
                             </div>
-                        
+
+                            <div class="form-group">
+                                <label>Notes</label>
+                                <textarea id="notes" class="form-control" name="notes" placeholder="Enter delivery notes..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit"id="order" class="btn btn-block btn-sm btn-success">Order Pizza</button>
+                            </div>
+            
                     </form>
                 </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </div>
             </div>
         </div>
     </body>

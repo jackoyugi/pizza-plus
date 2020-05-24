@@ -6,7 +6,7 @@ function Pizza(name, size, crust, toppings, notes) {
     this.notes = notes;
 }
 $(document).ready(function() {
-    $('form#myPizza').submit(function(event)() {
+    $('form#myPizza').submit(function(event) {
         event.preventDefault();
 
         var myName = $('type#name').val();
@@ -18,18 +18,18 @@ $(document).ready(function() {
         $.each($('input[name="size"]:checked'), function() {
             theSize.push($(this).val());
         });
-        .each($('input[name="crust"]:checked'), function() {
+        $.each($('input[name="crust"]:checked'), function() {
             thecrust.push($(this).val());
         });
-        .each($('input[name="toppings"]:checked'), function() {
-            thetoppings.push($(this).val());
+        $.each($('input[name="toppings"]:checked'), function() {
+            mytoppings.push($(this).val());
         });
+        
+        var newpizza = new Pizza(myName, theSize, theCrust, myToppings, myNotes)
 
+        $('div.selected-sizes').append("<button class='btn btn-sm btn-primary'>" + newpizza.size +"</button>")
 
-
-
-
-
+        
 
 
     });

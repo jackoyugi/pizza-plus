@@ -7,54 +7,65 @@
     </head>
     <body>
         <div class="container">
-            <img src="img/pizza.jpeg">
-            <h1>PiZZa Plus</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <form id="myPizza">
-                        <div class="form-group">
-                                
-                                <input type="text" class="form-control" value=" Enter your name" id="name">
-                                
-                        </div>
-                        
-                            <div class="form-group unshow" id="size">
-                                <label><input type="checkbox" name="size" value="small">Small</label>
-                                <label><input type="checkbox" name="size" value="medium">Medium</label>
-                                <label><input type="checkbox" name="size" value="large">Large</label>
-                            </div>
-
-                            <div class="form-group unshow" id="crust">
-                                <label><input type="checkbox" name="crust" value="cruspy">Cruspy</label>
-                                <label><input type="checkbox" name="crust" value="started">Started</label>
-                                <label><input type="checkbox" name="crust" value="gluten">Gluten free</label>
-                            </div>
-                            
-                            <div class="form-group unshow">
-                                <label><input type="checkbox" name="toppings" value="corn">Corn</label>
-                                <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
-                                <label><input type="checkbox" name="toppings" value="mushrooms">Mushroom</label>
-                                <label><input type="checkbox" name="toppings" value="ham">Ham</label>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Notes</label>
-                                <textarea id="notes" class="form-control" name="notes" placeholder="Enter delivery notes..."></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <button type="submit"id="order" class="btn btn-block btn-sm btn-success">Order Pizza</button>
-                            </div>
-            
-                    </form>
-                </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Submit Order</button>
-                        </div>
+            <div class="container">
+                <form id="pizzaOrder">
+                  <div id="orderStarter">
+                    <div class="pizza-logo mt-3">
+                      <img src="img/pizza.jpeg" alt="">
+                      <h1>PiZZa Plus</h1>
                     </div>
-            </div>
-        </div>
+                    <div class="row">
+                      <div class="col mb-3 mt-3">
+                        <div class="pizza-image-container">
+                          <img src="imgs/pizza.jpeg" alt="">
+                          <div class="pizza-toppings-container"></div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-success mt-4 w-100">Click Here to Start your Order</button>
+                    </div>
+                  </div>
+                  <div class="form-group" id="pizzaForm">
+                    <div class="mb-3" id="toppingsSection">
+                      <div class="topping-option-container">
+                        <select class="form-control" id="toppings">
+                          <option value="0">Select a topping</option>
+                          <option value="0.5">Pepperoni</option>
+                          <option value="0.5">Sausage</option>
+                          <option value="0.5">Bell Pepper</option>
+                          <option value="0.5">Mushroom</option>
+                          <option value="0.5">Onion</option>
+                          <option value="0.5">Artichoke</option>
+                          <option value="0.5">Tempeh</option>
+                        </select>
+                        <button type="button" class="btn btn-info ml-3" id="addToppings">Add</button>
+                      </div>
+                      <p class="error">Select an option</p>
+                    </div>
+                    <div id="sizeSection">
+                      <select class="form-control" id="sizes">
+                        <option value="0">Select a size</option>
+                        <option value="4">Small</option>
+                        <option value="5">Medium</option>
+                        <option value="6">Large</option>
+                        <option value="20">Ultra Extra Party Power</option>
+                      </select>
+                      <p class="error">Select an option</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Notes</label>
+                        <textarea id="notes" class="form-control" name="notes" placeholder="Enter delivery notes..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-block btn-sm btn-success mt-3" id="order">Order Pizza</button>
+                  </div>
+                  <div class="order-receipt" id="orderConfirmation">
+                    <h4>You've added these toppings:</h4>
+                    <ul></ul>
+                    <div class="total container">
+                      <h2 id="totalCost"></h2>
+                    </div>
+                  </div>
+                </form>
+              </div>
     </body>
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/scripts.js"></script>

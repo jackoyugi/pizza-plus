@@ -1,3 +1,11 @@
-.unshow{
-    display: none;
+/* General Styles
+=============================*/
+body {
+    background: linear-gradient(rgb(168, 163, 163) 0%, #222 100%);
+    height: 100vh;
+    color: white;
+}
+.pizza-logo {
+    background-color: black;
+    text-align: center;
 }

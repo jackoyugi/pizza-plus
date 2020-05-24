@@ -57,3 +57,18 @@ body {
     color: white;
   }
   /* Receipt Styles
+  =============================*/
+.order-receipt .row{
+    flex-direction: column;
+  }
+  .order-receipt ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .display-block {
+    display: block !important;
+  }

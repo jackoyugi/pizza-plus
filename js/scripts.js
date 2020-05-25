@@ -45,16 +45,16 @@ $(function() {
             $(".pizza-toppings-container").prepend('<img src="img/maspiza.jpeg">');
           } else if(toppingsText === "Mushroom") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+            $(".pizza-toppings-container").prepend('<img src="img/opizza.jpeg">');
           } else if(toppingsText === "Onion") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+            $(".pizza-toppings-container").prepend('<img src="img/ppizza.jpeg">');
           } else if(toppingsText === "Chicken") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+            $(".pizza-toppings-container").prepend('<img src="img/xpiza.jpeg">');
           } else if(toppingsText === "Pork") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+            $(".pizza-toppings-container").prepend('<img src="img/zpiza.jpeg">');
           }
           $("#toppings").val(0);
         }

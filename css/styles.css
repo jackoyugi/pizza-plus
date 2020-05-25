@@ -48,13 +48,13 @@ body {
   }
   .form-control {
     background-color: transparent;
-    color: white;
+    color: rgb(134, 127, 127);
     border: 3px solid #555;
     height: 60px !important;
   }
   .form-control:focus {
     background-color: rgba(255,255,255,.4);
-    color: white;
+    color: rgb(133, 115, 115);
   }
   /* Receipt Styles
   =============================*/
@@ -71,4 +71,7 @@ body {
   
   .display-block {
     display: block !important;
+  }
+  #notes {
+    color: black;
   }

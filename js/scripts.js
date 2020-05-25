@@ -42,7 +42,7 @@ $(function() {
             $(".pizza-toppings-container").prepend('<img src="img/saupiza.jpeg">');
           } else if(toppingsText === "Bell Pepper") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="img/maspiza.jpeg">');
+            $(".pizza-toppings-container").prepend('<img src="img/muspiza.jpeg">');
           } else if(toppingsText === "Mushroom") {
             $(".pizza-toppings-container img").remove();
             $(".pizza-toppings-container").prepend('<img src="img/opizza.jpeg">');

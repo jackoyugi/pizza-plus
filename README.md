@@ -9,7 +9,7 @@
 <p>This web app allows clients/users to order different types of pizza, their taste and costs. The users get instant recipts of their order and still they have the option of writing delivery notes</p>
 
 <h3>Live link</h3>
-<p> https://jackoyugi.github.io/delani-studio/</p>
+<p> https://jackoyugi.github.io/pizza-plus/</p>
 
 <h2>Technologies Used<h2>
 <ul>

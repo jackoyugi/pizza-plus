@@ -3,6 +3,8 @@ function Pizza () {
     this.toppings = [];
     this.size;
     this.total;
+    this.crust = [];
+    this.notes;
   }
   Pizza.prototype.cost = function () {
     var cost = 0;
@@ -32,27 +34,27 @@ $(function() {
           $("#toppings").removeClass('error-border');
           pizza.toppings.push(toppingsPrice);
           $("#orderConfirmation ul").append('<li>' + toppingsText + '&nbsp;</li>');
-          if(toppingsText === "Pepperoni") {
+          if(toppingsText === "Veges") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/pepperonis.png">');
+            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
           } else if(toppingsText === "Sausage") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/sausages.png">');
+            $(".pizza-toppings-container").prepend('<img src="img/saupiza.jpeg">');
           } else if(toppingsText === "Bell Pepper") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/bell-pepper.png">');
+            $(".pizza-toppings-container").prepend('<img src="img/maspiza.jpeg">');
           } else if(toppingsText === "Mushroom") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/mushroom.png">');
+            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
           } else if(toppingsText === "Onion") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/onions.png">');
-          } else if(toppingsText === "Artichoke") {
+            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+          } else if(toppingsText === "Chicken") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/artichokes.png">');
-          } else if(toppingsText === "Tempeh") {
+            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
+          } else if(toppingsText === "Pork") {
             $(".pizza-toppings-container img").remove();
-            $(".pizza-toppings-container").prepend('<img src="imgs/tempehs.png">');
+            $(".pizza-toppings-container").prepend('<img src="img/piza.jpeg">');
           }
           $("#toppings").val(0);
         }

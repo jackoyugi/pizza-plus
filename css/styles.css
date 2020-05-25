@@ -44,7 +44,7 @@ body {
   /* Hidden From Styles
 =============================*/
 #pizzaForm, .error, .pizza-image-container, .order-receipt {
-    display: ;
+    display: none;
   }
   .form-control {
     background-color: transparent;
